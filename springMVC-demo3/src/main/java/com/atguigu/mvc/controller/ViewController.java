@@ -10,7 +10,7 @@ public class ViewController {
         return "success";
     }
 
-    @RequestMapping("/testForward")
+    @RequestMapping("/testForw ard")
     public String testForward(){
         return "forward:/testThymeleafView";
     }
