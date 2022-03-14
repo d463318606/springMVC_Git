@@ -40,6 +40,11 @@
 
     <!--配置试图控制器-->
     <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
+    <mvc:view-controller path="/toAdd" view-name="employee_add"></mvc:view-controller>
+    <!--下面两个必须同时设置，才能保证请求被dispaterservlet和deaultservlet前后处理-->
+    <!--开放静态资源的访问-->
+    <mvc:default-servlet-handler/>
+
     <!--开启MVC的注解驱动-->
     <mvc:annotation-driven/>
 </beans>
